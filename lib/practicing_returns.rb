@@ -2,10 +2,12 @@ require 'pry'
 
 def hello(array)
   i = 0
+  concationated=""
   while i < array.length
-    yield(array[i])
+    concationated<<yield(array[i])
     i += 1
   end
+  concationated
 end
 
 
